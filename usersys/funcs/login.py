@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 class LoginFunc(AbstractFuncClass):
     def run(self, request, username, password, role, **kwargs):
         user = authenticate(internal_name=username, password=password)
-        if user.role != role:
+        if user is not None and user.role != role:
             user = None
 
         kwargs['user'] = user
