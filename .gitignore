@@ -1,0 +1,11 @@
+*.pyc
+.idea/
+db.sqlite3
+*/migrations/*
+!*/migrations/__init__.py
+!*/migrations/*.source
+.DS_Store
+media/
+testapp/
+*.test
+venv/
