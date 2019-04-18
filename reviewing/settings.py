@@ -49,8 +49,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
-    'corsheaders',
-    'simple_history',
 
     'base.apps.BaseConfig',
     'usersys.apps.UsersysConfig',
@@ -61,9 +59,6 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'base.middleware.session.WLSessionMiddleware',
-
-    'corsheaders.middleware.CorsMiddleware',
-    'simple_history.middleware.HistoryRequestMiddleware',
 
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
