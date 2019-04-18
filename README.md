@@ -41,6 +41,6 @@
 
 * Python 2.7.16
 * Django 1.11.20
-* DRF 2.9.0
+* DRF 3.9.0
 * memcached(可选)
 * 数据库自行选择
