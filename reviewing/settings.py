@@ -292,12 +292,6 @@ STRING_VALIDATORS = [
 # User_Sid duration
 SID_DURATION = datetime.timedelta(days=10)
 
-# Pusher
-PUSHER = {
-    "clz": "pushsys.funcs.pusher.jpusher.jpusher.JPusher",
-    "kwargs": {}
-}
-
 # CORS Staffs
 
 CORS_ALLOW_CREDENTIALS = True
@@ -315,59 +309,3 @@ CORS_ALLOW_METHODS = (
     'PUT',
     'VIEW',
 )
-
-CORS_ALLOW_HEADERS = (
-    'XMLHttpRequest',
-    'X_FILENAME',
-    'accept-encoding',
-    'authorization',
-    'content-type',
-    'dnt',
-    'origin',
-    'user-agent',
-    'x-csrftoken',
-    'x-requested-with',
-    'Pragma',
-)
-
-# history
-SIMPLE_HISTORY_HISTORY_CHANGE_REASON_USE_TEXT_FIELD = True
-
-# WCMiniProgram
-
-MINIPROGRAM = {
-    "AppID": 'wxfbbd60114365d79f',
-    "AppSecret": '77dacbf01a0bedbf663a932a2e0de4a7',
-}
-
-TIME_FOR_SET_ORDER = 1800
-TIME_FOR_DISPATCH = TIME_FOR_SET_ORDER / 2
-COUNTDOWN_FOR_ORDER = 3600
-
-NUM_OF_NEAR_BIN = 1000
-
-BUDGET_MAX_CAN_CANCEL = decimal.Decimal('20.0')
-COUNT_PER_PAGE = 10
-
-# BB recycle settings
-BBRECYCLE_CTX = {
-    'bbtel': '0411-62623999',
-    'exclude_sms': {'18888888888', }
-}
-
-ORDER_RESET_CREATE_TIME_DURATION = 600
-
-# CELERY
-CELERY_BROKER_URL = 'amqp://guest@localhost//'
-# CELERY_RESULT_BACKEND = 'rpc://'
-CELERY_IGNORE_RESULT = True
-CELERY_ENABLE_UTC = False
-CELERY_TIMEZONE = TIME_ZONE
-CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
-
-# AntiDuplicatePostMiddleware
-ANTI_DUP_POST_UUID_KEY = 'adp_uuid'
-ANTI_DUP_POST_CACHE_USE = 'sessions'
-
-# display order with referrer
-DISPLAY_AMOUNT = 100
